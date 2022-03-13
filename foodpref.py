@@ -30,20 +30,6 @@ df['Nationality'].unique()
 df.info()
 df.describe(include='all')
 
-import seaborn as sns
-import matplotlib.pyplot as plt
-dims = (20, 5)
-fig, ax = plt.subplots(1,3,figsize=dims)
-
-ax[0].set(title = 'Food Choice vs Age')
-sns.swarmplot(y = df['Age'], x = df['Food'], ax = ax[0])
-
-ax[1].set(title = 'Juice Choice vs Age')
-sns.swarmplot(y = df['Age'], x = df['Juice'], ax = ax[1])
-
-ax[2].set(title = 'Dessert Choice vs Age')
-sns.stripplot(y = df['Age'], x = df['Dessert'], ax = ax[2])
-
 # !pip install plotly
 # !pip install cufflinks
 
@@ -52,8 +38,6 @@ import streamlit as st
 import numpy as np
 import pandas as pd
 from PIL import Image
-# import seaborn as sns
-# import matplotlib.pyplot as plt
 import plotly.express as px
 
 st.title("Food Preference✨")
