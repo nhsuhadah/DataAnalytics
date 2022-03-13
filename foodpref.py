@@ -33,7 +33,7 @@ df.describe(include='all')
 # !pip install plotly
 # !pip install cufflinks
 
-# !pip install streamlit
+!pip install streamlit
 import streamlit as st
 import numpy as np
 import pandas as pd
@@ -76,18 +76,6 @@ else:
     rslt_df_1 = rslt_df.loc[rslt_df['Gender'] == 'Female']
 
 st.dataframe(rslt_df_1)
-
-# Select food
-# options = st.sidebar.selectbox(
-#      'Food Preference',
-#      ['Traditional food', 'Western Food'])
-
-# if option=='Male':
-#     rslt_df_2 = rslt_df_1.loc[rslt_df['Food'] == 'Traditional food']
-#     st.dataframe(rslt_df_2)
-# else:
-#     rslt_df_2 = rslt_df_1.loc[rslt_df['Food'] == 'Western Food']
-#     st.dataframe(rslt_df_2)
 
 #Select 
 numeric_columns = list(df.select_dtypes(['float','int']).columns)
