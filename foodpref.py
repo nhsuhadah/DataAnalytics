@@ -52,8 +52,8 @@ import streamlit as st
 import numpy as np
 import pandas as pd
 from PIL import Image
-import seaborn as sns
-import matplotlib.pyplot as plt
+# import seaborn as sns
+# import matplotlib.pyplot as plt
 import plotly.express as px
 
 st.title("Food Preference✨")
