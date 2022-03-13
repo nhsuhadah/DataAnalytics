@@ -67,6 +67,6 @@ if chart_select == 'Scatterplots':
   plot = px.scatter(data_frame = df, x=x_values, y=y_values)
   st.plotly_chart(plot)
 
-!pip freeze > requirements.txt
+# !pip freeze > requirements.txt
 
-!cat requirements.txt
+# !cat requirements.txt
