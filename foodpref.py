@@ -7,8 +7,8 @@ Original file is located at
     https://colab.research.google.com/drive/1KKKetozHHyWDF502hdzQyweY2h6XkXi8
 """
 
-!pip install plotly
-!pip install cufflinks
+# !pip install plotly
+# !pip install cufflinks
 
 # !pip install streamlit
 import streamlit as st
@@ -66,3 +66,7 @@ if chart_select == 'Scatterplots':
   y_values = st.sidebar.selectbox('Y axis', options=numeric_columns)
   plot = px.scatter(data_frame = df, x=x_values, y=y_values)
   st.plotly_chart(plot)
+
+!pip freeze > requirements.txt
+
+!cat requirements.txt
