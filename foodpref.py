@@ -33,7 +33,7 @@ df.describe(include='all')
 # !pip install plotly
 # !pip install cufflinks
 
-!pip install streamlit
+# !pip install streamlit
 import streamlit as st
 import numpy as np
 import pandas as pd
